@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide search boxes, run/pause controllers, instructions and log windows in printable PDFs */
+  header button,
+  footer,
+  .no-print,
+  button,
+  select,
+  input,
+  .overflow-y-auto {
+    display: none !important;
+  }
+
+  /* Body background adjustment for standard paper printing */
+  body {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+  }
+
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Prevent split roles cards or tree cut-offs mid-page */
+  section, 
+  .grid, 
+  .rounded-2xl {
+    page-break-inside: avoid !important;
+    border-color: #cbd5e1 !important;
+    shadow: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Force system/browser to print rich colors and background gradients */
+  div, button, span, p {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Let elements span cleanly without scroll bars */
+  .overflow-x-auto {
+    overflow: visible !important;
+  }
+}

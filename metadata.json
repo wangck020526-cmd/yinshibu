@@ -1,0 +1,6 @@
+{
+  "name": "YYDS影视组岗位架构与协同工作流",
+  "description": "展示YYDS影视组团队岗位树状图、详细岗位职责与全流程协同工作流，提供交互式业务流模拟与检索系统。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
